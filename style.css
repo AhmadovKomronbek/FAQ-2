@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(164,110,227);
+    background: linear-gradient(180deg, rgba(164,110,227,1) 0%, rgba(100,102,224,1) 100%);
+}
+.box{
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+.img-1 , .img-2{
+    position: relative;
+}
+.img-1{
+    right: 100px;
+    margin-top: 50px;
+    z-index: 2;
+}
+.img-2{
+    right: 270px;
+}
+
+.FAQ-box{
+    width: 500px;
+    height: 500px;
+    padding:50px;
+}
+ul{
+    list-style: none;
+    height: 100%;
+    overflow: auto;
+}
+li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.text{
+    overflow: hidden;
+    height: 0px;
+    color: #bababe;
+    margin: 10px 0px;
+}
+label{
+    height: 100%;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    display: none;
+}
+.activ{
+    height: 60px;
+}
+@media screen and (max-width:998px){
+    .box{
+        flex-direction: column;
+        width: 600px;
+        height: 700px;
+    }
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-1{
+        left: 80px;
+    }
+
+    .img-2{
+        right: 100px;
+    }
+    ul{
+        height: 300px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:769px){
+    .box{
+        width: 400px;
+    }
+}
